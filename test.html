@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Слайдер на jQuery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+
+  <div class="your-slider">
+    <div><img src="image1.jpg" alt="Image 1"></div>
+    <div><img src="image2.jpg" alt="Image 2"></div>
+    <div><img src="image3.jpg" alt="Image 3"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.your-slider').slick({
+        dots: true, // Показать точки навигации
+        infinite: true, // Бесконечный слайд
+        speed: 500, // Скорость переключения
+        slidesToShow: 1, // Количество слайдов, показываемых одновременно
+        slidesToScroll: 1 // Количество слайдов, прокручиваемых за один раз
+      });
+    });
+  </script>
+
+</body>
+
+</html>
