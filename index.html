@@ -606,7 +606,7 @@
     </section>
 
     <!--------------------------------------Slider main container ----------------------------------------------->
-    <div class="portfolio">
+    <section class="portfolio">
       <div class="swiper" id="portfolio">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -631,7 +631,7 @@
         <!-- If we need scrollbar -->
         <!--<div class="swiper-scrollbar"></div>-->
       </div>
-    </div>
+    </section>
     <!--------------------------------------Slider main container ----------------------------------------------->
 
     <section class="u-clearfix u-palette-1-base u-section-8" id="sec-2780">
@@ -1276,7 +1276,7 @@
       .swiper {
         width: 100%; /* Ширина слайдера на 100% */
         margin: 0 auto; /* Центрирование слайдера */
-        background-color: rgb(241, 241, 241);
+        background-color: #fff;
       }
 
       /* Стили для слайдов */
@@ -1301,7 +1301,6 @@
       @media (min-width: 1200px) {
         .swiper {
           width: var(--theme-sheet-width-xl) !important;
-          background-color: rgb(177, 10, 10);
         }
 
         .swiper-slide {
@@ -1312,7 +1311,6 @@
       @media (min-width: 992px) and (max-width: 1199px) {
         .swiper {
           width: var(--theme-sheet-width-lg) !important;
-          background-color: rgb(10, 177, 85);
         }
 
         .swiper-slide {
@@ -1323,12 +1321,10 @@
       @media (min-width: 768px) and (max-width: 991px) {
         .swiper {
           width: var(--theme-sheet-width-md) !important;
-          background-color: rgb(10, 27, 177);
         }
 
         .swiper-slide {
           height: 700px; /* Высота по умолчанию */
-          background-color: rgb(43, 177, 10);
         }
       }
 
@@ -1338,7 +1334,6 @@
         }
         .swiper {
           width: var(--theme-sheet-width-sm) !important;
-          background-color: rgb(14, 247, 196);
         }
 
         .swiper-slide {
@@ -1352,7 +1347,6 @@
         }
         .swiper {
           width: var(--theme-sheet-width-xs) !important;
-          background-color: rgb(247, 14, 14);
         }
 
         .swiper-slide {
