@@ -606,32 +606,32 @@
     </section>
 
     <!--------------------------------------Slider main container ----------------------------------------------->
+    <div class="portfolio">
+      <div class="swiper" id="portfolio">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./images/1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/3.jpg" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-    <div class="swiper" id="portfolio">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="./images/1.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/2.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/3.jpg" />
-        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!--<div class="swiper-scrollbar"></div>-->
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
     </div>
-
     <!--------------------------------------Slider main container ----------------------------------------------->
 
     <section class="u-clearfix u-palette-1-base u-section-8" id="sec-2780">
@@ -1270,9 +1270,13 @@
       }
 
       /* --------------------------------Основные стили для слайдера ---------------------------------------*/
+      .portfolio {
+        padding-bottom: 80px;
+      }
       .swiper {
         width: 100%; /* Ширина слайдера на 100% */
         margin: 0 auto; /* Центрирование слайдера */
+        background-color: rgb(241, 241, 241);
       }
 
       /* Стили для слайдов */
@@ -1297,26 +1301,18 @@
       @media (min-width: 1200px) {
         .swiper {
           width: var(--theme-sheet-width-xl) !important;
+          background-color: rgb(177, 10, 10);
         }
 
         .swiper-slide {
-          height: 1000px; /* Высота по умолчанию */
+          height: 800px; /* Высота по умолчанию */
         }
       }
 
       @media (min-width: 992px) and (max-width: 1199px) {
         .swiper {
           width: var(--theme-sheet-width-lg) !important;
-        }
-
-        .swiper-slide {
-          height: 900px; /* Высота по умолчанию */
-        }
-      }
-
-      @media (min-width: 768px) and (max-width: 991px) {
-        .swiper {
-          width: var(--theme-sheet-width-md) !important;
+          background-color: rgb(10, 177, 85);
         }
 
         .swiper-slide {
@@ -1324,9 +1320,25 @@
         }
       }
 
+      @media (min-width: 768px) and (max-width: 991px) {
+        .swiper {
+          width: var(--theme-sheet-width-md) !important;
+          background-color: rgb(10, 27, 177);
+        }
+
+        .swiper-slide {
+          height: 700px; /* Высота по умолчанию */
+          background-color: rgb(43, 177, 10);
+        }
+      }
+
       @media (min-width: 576px) and (max-width: 767px) {
+        .portfolio {
+          padding-bottom: 120px;
+        }
         .swiper {
           width: var(--theme-sheet-width-sm) !important;
+          background-color: rgb(14, 247, 196);
         }
 
         .swiper-slide {
@@ -1335,12 +1347,20 @@
       }
 
       @media (max-width: 575px) {
+        .portfolio {
+          padding-bottom: 120px;
+        }
         .swiper {
           width: var(--theme-sheet-width-xs) !important;
+          background-color: rgb(247, 14, 14);
         }
 
         .swiper-slide {
           height: 400px; /* Высота по умолчанию */
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+          display: none;
         }
       }
     </style>
