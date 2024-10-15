@@ -9582,7 +9582,7 @@ li.active > a.u-button-style.u-button-style.u-border-active-grey-70 {
 }
 .u-button-style.u-border-grey-75 {
   border-color: #404040 !important;
-  color: #404040 !important;
+  color: #fff !important;
   background-color: transparent !important;
 }
 .u-button-style.u-border-grey-75:hover,
@@ -12750,7 +12750,7 @@ a.u-button-style.u-button-style.active
   > .u-text-active-palette-1-base
   .u-svg-link,
 .u-text-hover-palette-1-base:focus .u-svg-link {
-  fill: #2344a1;
+  fill: #fff;
 }
 .u-link.u-text-palette-1-base:hover {
   color: #203d91 !important;
